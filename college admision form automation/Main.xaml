@@ -1,0 +1,245 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="840.0000000000001,2615.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="College admission form automation" sap:VirtualizedContainerService.HintSize="550.4,2592" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="data" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[data]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="516.8,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="C:\Users\ASHWIN\OneDrive\Desktop\college form.xlsx" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome College Admission Form" sap:VirtualizedContainerService.HintSize="516.8,2388.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,2148.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="449.6,2087.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,1896.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Full Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Full Name&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="xyrl7pwE30-y6_l0X3Qn_A" CvElementArea="706, 268, 537, 57" CvType="InputBox" DesignTimeRectangle="706, 268, 537, 57" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="1322e869-a5fb-43aa-82df-ec8056ee2296" InformativeScreenshot="3b6ef528ca71447f3c4e6a7d88d8ddb4.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/ZQXs6awxuk2N8rDHpXeegA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="707, 239, 102, 18" CvTextArgument="Full Name:" CvType="Text" DesignTimeRectangle="707, 239, 102, 18" ElementType="Text" Guid="5456226f-0acf-49ef-b8bf-a20ec67fad34" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="jzDU555lB0SsFYK7dylGQg" CvElementArea="706, 379, 536, 57" CvType="InputBox" DesignTimeRectangle="706, 379, 536, 57" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="02293adc-f5d5-4e33-b0e8-1ace8a183adc" InformativeScreenshot="4f9c042d347cc6ecea666b609c4ac74c.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/sfGXr6xEuUqhUjz2YKJx6Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="707, 349, 61, 20" CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="707, 349, 61, 20" ElementType="Text" Guid="6be07840-8fe5-4a90-b9b4-c1518d63a367" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Phone number&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="gqam-pYbBUuLyvoKmQByIw" CvElementArea="706, 490, 537, 56" CvType="InputBox" DesignTimeRectangle="706, 490, 537, 56" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="44754636-b9d7-4eeb-8f0b-b1005b4816f3" InformativeScreenshot="b07f95bf9f4f4b5bd3dae89b269178cd.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/5xSosElWCUyKWvifMLRqCA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="707, 460, 150, 18" CvTextArgument="Phone Number:" CvType="Text" DesignTimeRectangle="707, 460, 150, 18" ElementType="Text" Guid="8544e55e-df85-40af-8a80-f1b177b8d5c2" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Date of Birth&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="pKgXpSu-akqRVJW2iD_yjg" CvElementArea="706, 602, 537, 58" CvType="InputBox" DesignTimeRectangle="706, 602, 537, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="d295da0e-c9b0-4fa9-bbf1-c0e71b16efa1" InformativeScreenshot="08ed0a5037b2fddba5f009daab09288f.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/0ZlP8o4cBUWRwl2-KSDMjQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="707, 571, 127, 18" CvTextArgument="Date of Birth:" CvType="Text" DesignTimeRectangle="707, 571, 127, 18" ElementType="Text" Guid="38879559-0459-4f91-a4f6-827ca35d342f" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Course'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Course&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="NQ0j98cS9UGve37gffGsaQ" CvElementArea="706, 715, 537, 56" CvType="InputBox" DesignTimeRectangle="706, 715, 537, 56" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="db6c649e-ccbb-4cf9-a554-3d3a17f2c67b" InformativeScreenshot="82886a6b28d548974b2b9fdd10fba400.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/X6WUBPpARUu19Jlb8RA80g" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="706, 684, 77, 18" CvTextArgument="Course:" CvType="Text" DesignTimeRectangle="706, 684, 77, 18" ElementType="Text" Guid="2fcff3bb-b1b8-4d4c-8843-36b5fc76dd37" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="HardwareEvents" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Text="[CurrentRow(&quot;Address&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="zuE3-aBoFEKY3yk0YQgquQ" CvElementArea="707, 826, 535, 95" CvType="InputBox" DesignTimeRectangle="707, 826, 535, 95" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="9cd13392-98d6-42dc-8fa2-821c5cd46d2a" InformativeScreenshot="7f9f5f5299a231ba040dfd2dbddb6484.png" IsResponsive="True" Reference="j7TJR_CrnEKJqAVcCwjokA/p-XLg4MkWUmFAkmavDDySQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" CvTextArea="706, 795, 88, 18" CvTextArgument="Address:" CvType="Text" DesignTimeRectangle="706, 795, 88, 18" ElementType="Text" Guid="ebc9ae45-659b-48ea-8d29-66ed749005eb" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8259d4c9-57ad-49cd-87a0-3f724d05af0d" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="" CVScreenId="f8861a5e-084e-4ff5-82cd-8bd11899e3ca" ContentHash="_tvN3o_R-EG4nsEps4yD9g" CvElementArea="707, 948, 504, 56" CvTextArea="922, 965, 71, 18" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="707, 948, 504, 56" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="6878d5da-cfd1-41f3-b38c-2ceae9f1e160" InformativeScreenshot="394c54bc250739f132cc11cc363e9a78.png" Reference="j7TJR_CrnEKJqAVcCwjokA/WTQsZlx-xkeX1Bh1VB96vA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='College Admission Form - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Form submitted successfully&quot;]" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="Ev4UPhqGYkCJBGyTAUAuag" IconBase64="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" InformativeScreenshot="6d6d53b894457868f2a127e37d60c44b.png" Reference="j7TJR_CrnEKJqAVcCwjokA/Oiz3AOLm40eTZ1KA1_CR1Q" Selector="&lt;html app='chrome.exe' title='College Admission Form' /&gt;" Title="College Admission Form" Url="file:///D:/INTERNET%20PROGRAMMING/College%20admission%20form/Index.html" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
